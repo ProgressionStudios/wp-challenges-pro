@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wp-challenges-pro/post-list",
+	"version": "0.1.0",
+	"title": "Post List",
+	"category": "wp-challenges-pro",
+	"icon": "list-view",
+	"description": "Block that fetches and displays posts from a specific category",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "wp-challenges-pro",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

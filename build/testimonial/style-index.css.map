@@ -1,0 +1,1 @@
+{"version":3,"file":"testimonial/style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;AACD,C","sources":["webpack://wp-challenges-pro/./src/testimonial/style.scss"],"sourcesContent":[".wp-block-create-block-wp-challenges-pro {\n\tbackground-color: #21759b;\n\tcolor: #fff;\n\tpadding: 2px;\n}"],"names":[],"sourceRoot":""}
