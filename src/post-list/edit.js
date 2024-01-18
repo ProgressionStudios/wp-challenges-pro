@@ -3,6 +3,7 @@ import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, SelectControl, RangeControl } from '@wordpress/components';
 import './editor.scss';
 import { useSelect } from '@wordpress/data';
+import ServerSideRender from '@wordpress/server-side-render';
 
 
 export default function Edit({ attributes, setAttributes } ) {
@@ -43,13 +44,12 @@ export default function Edit({ attributes, setAttributes } ) {
 	);
 
 	return (
-		<p {...useBlockProps()}>
+		<div {...useBlockProps()}>
 			{inspectorControls}
-			{selectedCat}
-			{__(
-				'Wp Challenges Pro – hello from the editor!',
-				'wp-challenges-pro'
-			)}
-		</p>
+			<ServerSideRender
+				block="wp-challenges-pro/post-list"
+				attributes={attributes}
+			/>
+		</div>
 	);
 }
