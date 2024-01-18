@@ -4,14 +4,12 @@ import { PanelBody, SelectControl, RangeControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import ServerSideRender from '@wordpress/server-side-render';
 
-
 export default function Edit({ attributes, setAttributes } ) {
 
 	const {
 		selectedCat,
 		postCount
 	} = attributes;
-
 
 	const categories = useSelect(select =>
 		select('core').getEntityRecords('taxonomy', 'category', { per_page: -1 })

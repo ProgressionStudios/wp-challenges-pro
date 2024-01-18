@@ -16,7 +16,11 @@
 			"default": 10
 		}
 	},
-	"example": {},
+	"example": {
+		"attributes": {
+			"postCount": 2
+		}
+	},
 	"supports": {
 		"html": false
 	},

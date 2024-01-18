@@ -1,10 +1,28 @@
 /*!*************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/post-list/style.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************/
-.wp-block-create-block-wp-challenges-pro {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.post-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.post-list-item {
+  box-sizing: border-box;
+  width: calc(50% - 1rem);
+  margin: 0.5rem;
+  padding: 1rem;
+  flex-wrap: nowrap;
+  border: 1px solid #ccc;
+}
+
+.post-list-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-list-item h2 {
+  font-size: 1.85rem;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
