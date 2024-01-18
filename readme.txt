@@ -6,10 +6,11 @@ Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Custom Blocks built for WordPress Challenges.
+Custom Blocks built for WordPress Challenges.com
 
-== Description ==
-
+== Blocks Created ==
+Post List (WP Challenge #1)
+Testimonial (WP Challenge #1)
 
 == Installation ==
 

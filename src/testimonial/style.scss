@@ -1,5 +1,32 @@
-.wp-block-create-block-wp-challenges-pro {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.wp-block-wp-challenges-pro-testimonial {
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border-radius:8px;
+	padding: 2rem;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.quote-icon-testimonial {
+	font-size:6rem;
+	line-height:1;
+	opacity:0.5;
+	font-weight:700;
+	position:absolute;
+	top:2rem;
+	left:2rem;
+}
+
+.quote-content-testimonial {
+	padding-left:4.5rem;
+}
+
+.meta-testimonial {
+	border-top:2px solid #eee;
+	margin-top:2rem;
+	padding-top:2rem;
+}
+
+.meta-testimonial h6,
+.meta-testimonial h5 {
+	margin:0 0 1rem 0;
 }

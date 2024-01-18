@@ -23,10 +23,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Edit() {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+function Edit({
+  attributes,
+  setAttributes
+}) {
+  const {
+    quoteContent
+  } = attributes;
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Wp Challenges Pro – hello from the editor!', 'wp-challenges-pro'));
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "quote-icon-testimonial"
+  }, "\u201C"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    className: "quote-content-testimonial",
+    tagName: "div",
+    value: quoteContent,
+    allowedFormats: ['core/bold', 'core/italic', 'core/link'],
+    onChange: quoteContent => setAttributes({
+      quoteContent
+    }),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Insert quote here', 'wp-challenges-pro')
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "meta-testimonial"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
+    className: "author-testimonial"
+  }, "Author Name"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
+    className: "position-testimonial"
+  }, "Job Title")));
 }
 
 /***/ }),
@@ -156,7 +179,7 @@ module.exports = window["wp"]["i18n"];
   \************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/testimonial","version":"0.1.0","title":"Testimonial","category":"wp-challenges-pro","icon":"admin-users","description":"Gutenberg block that displays a testimonial card","example":{},"supports":{"html":false},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/testimonial","version":"0.1.0","title":"Testimonial","category":"wp-challenges-pro","icon":"admin-users","description":"Gutenberg block that displays a testimonial card","attributes":{"quoteContent":{"type":"string"}},"example":{},"supports":{"color":{"background":true,"text":true,"link":true},"spacing":{"margin":true,"padding":true},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalFontWeight":true,"__experimentalFontStyle":true,"__experimentalTextTransform":true,"__experimentalTextDecoration":true,"__experimentalLetterSpacing":true,"__experimentalDefaultControls":{"fontSize":true}}},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

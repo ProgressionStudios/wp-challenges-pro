@@ -1,5 +1,5 @@
 # WP Challenges Pro
-Custom Blocks built for [WordPress Challenges](https://www.wpchallenges.com/).
+Custom Blocks built for [WordPress Challenges.com](https://www.wpchallenges.com/).
 
 ### Blocks ###
 * Post List (WP Challenge #1)

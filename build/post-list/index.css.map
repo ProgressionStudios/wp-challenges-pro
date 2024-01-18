@@ -1,1 +1,0 @@
-{"version":3,"file":"post-list/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://wp-challenges-pro/./src/post-list/editor.scss"],"sourcesContent":[".wp-block-create-block-wp-challenges-pro {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}
