@@ -1,18 +1,9 @@
-import { registerBlockType } from '@wordpress/blocks';
-import './style.scss';
+import { useBlockProps } from '@wordpress/block-editor';
 
-import Edit from './edit';
-import save from './save';
-import metadata from './block.json';
-
-registerBlockType(metadata.name, {
-	/**
-	 * @see ./edit.js
-	 */
-	edit: Edit,
-
-	/**
-	 * @see ./save.js
-	 */
-	save,
-});
+export default function save() {
+	return (
+		<p {...useBlockProps.save()}>
+			{'Wp Challenges Pro – hello from the saved content!'}
+		</p>
+	);
+}

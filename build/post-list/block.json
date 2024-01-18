@@ -7,6 +7,15 @@
   "category": "wp-challenges-pro",
   "icon": "list-view",
   "description": "Block that fetches and displays posts from a specific category",
+  "attributes": {
+    "selectedCat": {
+      "type": "string"
+    },
+    "postCount": {
+      "type": "number",
+      "default": 10
+    }
+  },
   "example": {},
   "supports": {
     "html": false
