@@ -1,5 +1,5 @@
 # WP Challenges Pro
-Custom Blocks built for [WordPress Challenges](https://wpchallenges.beehiiv.com/).
+Custom Blocks built for [WordPress Challenges](https://www.wpchallenges.com/).
 
 ### Blocks ###
 * Post List (WP Challenge #1)
@@ -8,6 +8,7 @@ Custom Blocks built for [WordPress Challenges](https://wpchallenges.beehiiv.com/
 ## Getting Started ##
 1. Download the zip file and install plugin within your WordPress Dashboard
 2. Find the list of new blocks under the block category "**WP Challenges Pro**"
+
 ![Block Category](https://gutenberg.progressionstudios.com/wp-content/uploads/2024/01/block-categories.jpg)
 
 ## Tools used  ##
