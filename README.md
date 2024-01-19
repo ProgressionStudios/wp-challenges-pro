@@ -1,5 +1,7 @@
 # WP Challenges Pro
-Custom Blocks built for [WordPress Challenges.com](https://www.wpchallenges.com/).
+Custom Blocks built for [WordPress Challenges.com](https://www.wpchallenges.com/). 
+
+[View Block examples ](https://gutenberg.progressionstudios.com/wp-challenges/). 
 
 ### Blocks ###
 * Testimonial (WP Challenge #1)
