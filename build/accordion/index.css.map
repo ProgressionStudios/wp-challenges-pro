@@ -1,1 +1,0 @@
-{"version":3,"file":"accordion/index.css","mappings":";;;AAAA;EACI;EACA;EACA;EACA;EACA;AACJ,C","sources":["webpack://wp-challenges-pro/./src/accordion/editor.scss"],"sourcesContent":[".hidden-editor {\n    font-size:0.65rem;\n    font-style:italic;\n    opacity:0.8;\n    padding:0 1rem 0 0;\n    margin-left: auto;\n}"],"names":[],"sourceRoot":""}
