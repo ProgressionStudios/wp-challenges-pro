@@ -19,13 +19,12 @@
 		},
 		"toggleOpen": {
 			"type": "boolean",
-			"default": true
+			"default": false
 		}
 	},
 	"example": {},
 	"textdomain": "wp-challenges-pro",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+	"style": "file:./style-index.css"
 }

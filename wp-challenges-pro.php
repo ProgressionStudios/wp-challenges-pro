@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function wp_challenges_pro_wp_challenges_pro_block_init() {
 	register_block_type( __DIR__ . '/build/accordion' );
-	register_block_type( __DIR__ . '/build/accordion/accordion-child' ); // Child Element
+	register_block_type( __DIR__ . '/build/accordion/accordion-child' );
 	register_block_type( __DIR__ . '/build/testimonial' );
 	register_block_type( __DIR__ . '/build/post-list' );
 }
