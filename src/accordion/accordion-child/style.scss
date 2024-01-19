@@ -1,0 +1,34 @@
+.title-accordion-pro {
+    background:#eee;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+
+.content-accordion-pro {
+    background:#ffffff;
+    padding:1rem;
+    border:1px solid #eee;
+}
+
+.title-accordion-inline-pro {
+    display:inline;
+}
+
+.toggle-icon-pro {
+    font-weight:bold;
+    font-size:1.5rem;
+    line-height:1;
+    margin:0 1.2rem 0  .6rem;
+    transform: rotate(90deg);
+}
+
+.container-accordion-pro.hide .toggle-icon-pro {
+    transform: rotate(0deg);
+}
+
+.container-accordion-pro.hide .content-accordion-pro {
+    display:none;
+}
+
