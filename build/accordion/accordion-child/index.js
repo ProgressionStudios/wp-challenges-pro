@@ -30,7 +30,6 @@ function Edit({
 }) {
   const {
     titleAccordion,
-    contentAccordion,
     toggleOpen
   } = attributes;
   const inspectorControls = (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
@@ -48,7 +47,7 @@ function Edit({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, inspectorControls, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: toggleOpen ? 'container-accordion-pro' : 'container-accordion-pro hide'
+    className: "container-accordion-pro"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "title-accordion-pro"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -62,16 +61,21 @@ function Edit({
       titleAccordion
     }),
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add Title...', 'wp-challenges-pro')
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    className: "content-accordion-pro",
-    tagName: "div",
-    value: contentAccordion,
-    allowedFormats: ['core/bold', 'core/italic', 'core/link'],
-    onChange: contentAccordion => setAttributes({
-      contentAccordion
-    }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add content...', 'wp-challenges-pro')
-  })));
+  }), toggleOpen == false && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "hidden-editor"
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Closed by default', 'wp-challenges-pro'))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "content-accordion-pro"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    template: [['core/paragraph', {
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add content...', 'wp-challenges-pro'),
+      content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content goes here', 'wp-challenges-pro'),
+      style: {
+        "spacing": {
+          "padding": ".4rem 1rem"
+        }
+      }
+    }]]
+  }))));
 }
 
 /***/ }),
@@ -97,7 +101,6 @@ function save({
 }) {
   const {
     titleAccordion,
-    contentAccordion,
     toggleOpen
   } = attributes;
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -113,10 +116,7 @@ function save({
     value: titleAccordion
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-accordion-pro"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
-    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps,
-    value: contentAccordion
-  }))));
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null))));
 }
 
 /***/ }),
@@ -177,7 +177,7 @@ module.exports = window["wp"]["i18n"];
   \**************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/accordion-child","version":"0.1.0","title":"Accordion Item","category":"wp-challenges-pro","parent":["wp-challenges-pro/accordion"],"icon":"admin-users","description":"Accordion item","attributes":{"titleAccordion":{"type":"string","default":"Accordion Title"},"contentAccordion":{"type":"string","default":"Content goes here"},"toggleOpen":{"type":"boolean","default":false}},"example":{},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/accordion-child","version":"0.1.0","title":"Accordion Item","category":"wp-challenges-pro","parent":["wp-challenges-pro/accordion"],"icon":"admin-users","description":"Accordion item","attributes":{"titleAccordion":{"type":"string","default":"Accordion Title"},"toggleOpen":{"type":"boolean","default":false}},"supports":{"color":{"background":true,"text":true,"link":true},"spacing":{"margin":true,"padding":true},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalFontWeight":true,"__experimentalFontStyle":true,"__experimentalTextTransform":true,"__experimentalTextDecoration":true,"__experimentalLetterSpacing":true,"__experimentalDefaultControls":{"fontSize":true}}},"example":{},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

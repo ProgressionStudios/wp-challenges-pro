@@ -1,9 +1,8 @@
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps, RichText, InnerBlocks } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	const {
 		titleAccordion,
-		contentAccordion,
 		toggleOpen
 	} = attributes;
 	return (
@@ -14,7 +13,7 @@ export default function save({ attributes }) {
 					<RichText.Content {...useBlockProps} value={titleAccordion} />
 				</div>
 				<div className="content-accordion-pro">
-				<RichText.Content {...useBlockProps} value={contentAccordion} />
+					<InnerBlocks.Content />
 				</div>
 			</div>
 		</div>

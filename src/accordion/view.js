@@ -1,4 +1,5 @@
 
+
 const links = document.querySelectorAll('.title-accordion-pro');
 
 links.forEach((link) => {

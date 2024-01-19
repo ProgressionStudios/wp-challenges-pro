@@ -3,6 +3,8 @@
   \*************************************************************************************************************************************************************************************************************************************************/
 .wp-block-wp-challenges-pro-accordion-child {
   margin-bottom: 15px;
+  border: 1px solid #eee;
+  background: #ffffff;
 }
 
 .title-accordion-pro {
@@ -11,12 +13,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-
-.content-accordion-pro {
-  background: #ffffff;
-  padding: 1rem;
-  border: 1px solid #eee;
 }
 
 .title-accordion-inline-pro {

@@ -13,13 +13,33 @@
 			"type": "string",
 			"default": "Accordion Title"
 		},
-		"contentAccordion": {
-			"type": "string",
-			"default": "Content goes here"
-		},
 		"toggleOpen": {
 			"type": "boolean",
 			"default": false
+		}
+	},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true,
+			"link": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
 		}
 	},
 	"example": {},
