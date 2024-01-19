@@ -8,8 +8,13 @@
   "icon": "admin-users",
   "description": "Gutenberg block that displays a testimonial card",
   "attributes": {
-    "quoteContent": {
-      "type": "string"
+    "authorName": {
+      "type": "string",
+      "default": "John Doe"
+    },
+    "jobTitle": {
+      "type": "string",
+      "default": "Accountant"
     }
   },
   "example": {},

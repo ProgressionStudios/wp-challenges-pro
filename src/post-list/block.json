@@ -9,7 +9,8 @@
 	"description": "Block that fetches and displays posts from a specific category",
 	"attributes": {
 		"selectedCat": {
-			"type": "string"
+			"type": "string",
+			"default": "1"
 		},
 		"postCount": {
 			"type": "number",

@@ -215,7 +215,7 @@ module.exports = window["wp"]["serverSideRender"];
   \**********************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/post-list","version":"0.1.0","title":"Post List","category":"wp-challenges-pro","icon":"list-view","description":"Block that fetches and displays posts from a specific category","attributes":{"selectedCat":{"type":"string"},"postCount":{"type":"number","default":10}},"example":{"attributes":{"postCount":2}},"supports":{"html":false},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/post-list","version":"0.1.0","title":"Post List","category":"wp-challenges-pro","icon":"list-view","description":"Block that fetches and displays posts from a specific category","attributes":{"selectedCat":{"type":"string","default":"1"},"postCount":{"type":"number","default":10}},"example":{"attributes":{"postCount":2}},"supports":{"html":false},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

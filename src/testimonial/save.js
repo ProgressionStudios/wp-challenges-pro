@@ -1,9 +1,20 @@
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText, InnerBlocks } from '@wordpress/block-editor';
 
-export default function save() {
+export default function save({ attributes }) {
+	const {
+		authorName,
+		jobTitle
+	} = attributes;
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Wp Challenges Pro – hello from the saved content!' }
-		</p>
+		<div { ...useBlockProps.save() }>
+			<div className="quote-icon-testimonial">&ldquo;</div>
+			<div className="quote-content-testimonial">
+				<InnerBlocks.Content />
+			</div>
+			<div className="meta-testimonial">
+				<RichText.Content {...useBlockProps} tagName="div" value={authorName} />
+				<RichText.Content {...useBlockProps} tagName="div" value={jobTitle} />
+			</div>
+		</div>
 	);
 }

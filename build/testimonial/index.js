@@ -28,28 +28,41 @@ function Edit({
   setAttributes
 }) {
   const {
-    quoteContent
+    authorName,
+    jobTitle
   } = attributes;
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "quote-icon-testimonial"
-  }, "\u201C"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    className: "quote-content-testimonial",
-    tagName: "div",
-    value: quoteContent,
-    allowedFormats: ['core/bold', 'core/italic', 'core/link'],
-    onChange: quoteContent => setAttributes({
-      quoteContent
-    }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Insert quote here', 'wp-challenges-pro')
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, "\u201C"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "quote-content-testimonial"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    template: [['core/paragraph', {
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Insert quote here', 'wp-challenges-pro'),
+      content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel venenatis lacus, at feugiat lacus.', 'wp-challenges-pro')
+    }]]
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "meta-testimonial"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
-    className: "author-testimonial"
-  }, "Author Name"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
-    className: "position-testimonial"
-  }, "Job Title")));
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    className: "author-testimonial",
+    tagName: "div",
+    value: authorName,
+    allowedFormats: ['core/bold', 'core/italic', 'core/link'],
+    onChange: authorName => setAttributes({
+      authorName
+    }),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add Name...', 'wp-challenges-pro')
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    className: "job-title-testimonial",
+    tagName: "div",
+    value: jobTitle,
+    allowedFormats: ['core/bold', 'core/italic', 'core/link'],
+    onChange: jobTitle => setAttributes({
+      jobTitle
+    }),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add job title...', 'wp-challenges-pro')
+  })));
 }
 
 /***/ }),
@@ -101,10 +114,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 
 
-function save() {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+function save({
+  attributes
+}) {
+  const {
+    authorName,
+    jobTitle
+  } = attributes;
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save()
-  }, 'Wp Challenges Pro – hello from the saved content!');
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "quote-icon-testimonial"
+  }, "\u201C"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "quote-content-testimonial"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "meta-testimonial"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
+    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps,
+    tagName: "div",
+    value: authorName
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
+    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps,
+    tagName: "div",
+    value: jobTitle
+  })));
 }
 
 /***/ }),
@@ -179,7 +212,7 @@ module.exports = window["wp"]["i18n"];
   \************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/testimonial","version":"0.1.0","title":"Testimonial","category":"wp-challenges-pro","icon":"admin-users","description":"Gutenberg block that displays a testimonial card","attributes":{"quoteContent":{"type":"string"}},"example":{},"supports":{"color":{"background":true,"text":true,"link":true},"spacing":{"margin":true,"padding":true},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalFontWeight":true,"__experimentalFontStyle":true,"__experimentalTextTransform":true,"__experimentalTextDecoration":true,"__experimentalLetterSpacing":true,"__experimentalDefaultControls":{"fontSize":true}}},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-challenges-pro/testimonial","version":"0.1.0","title":"Testimonial","category":"wp-challenges-pro","icon":"admin-users","description":"Gutenberg block that displays a testimonial card","attributes":{"authorName":{"type":"string","default":"John Doe"},"jobTitle":{"type":"string","default":"Accountant"}},"example":{},"supports":{"color":{"background":true,"text":true,"link":true},"spacing":{"margin":true,"padding":true},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalFontWeight":true,"__experimentalFontStyle":true,"__experimentalTextTransform":true,"__experimentalTextDecoration":true,"__experimentalLetterSpacing":true,"__experimentalDefaultControls":{"fontSize":true}}},"textdomain":"wp-challenges-pro","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
