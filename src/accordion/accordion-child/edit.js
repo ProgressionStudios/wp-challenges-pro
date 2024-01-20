@@ -12,7 +12,7 @@ export default function Edit({ attributes, setAttributes }) {
 		<InspectorControls key="inspector">
 			<PanelBody title={__('General', 'wp-challenges-pro')} initialOpen={true}>
 				<ToggleControl
-					label={__('Display open', 'wp-challenges-pro')}
+					label={__('Display open by default', 'wp-challenges-pro')}
 					checked={toggleOpen}
 					onChange={(value) => setAttributes({ toggleOpen: value })}
 				/>
@@ -23,7 +23,7 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<div {...useBlockProps()}>
 			{inspectorControls}
-			<div className='container-accordion-pro'>
+			<div className={(toggleOpen) ? ('container-accordion-pro') : ('container-accordion-pro hide')}>
 				<div className="title-accordion-pro">
 					<span className="toggle-icon-pro">&#8250;</span>
 					<RichText

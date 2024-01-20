@@ -25,6 +25,14 @@ function wp_challenges_pro_wp_challenges_pro_block_init() {
 }
 add_action( 'init', 'wp_challenges_pro_wp_challenges_pro_block_init' );
 
+function editor_enqueue_assets_wp_challenges() {
+        wp_enqueue_script(
+            'accordion-challenges-js',
+            plugins_url( 'assets/js/accordion-editor.js', __FILE__ ),
+        );
+}
+add_action( 'enqueue_block_assets', 'editor_enqueue_assets_wp_challenges' );
+
 function block_categories_wp_challenges_pro( $block_categories, $editor_context ) {
 		if ( ! empty( $editor_context->post ) ) {
 			array_push(
