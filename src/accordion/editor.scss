@@ -2,6 +2,21 @@
     font-size:0.65rem;
     font-style:italic;
     opacity:0.8;
-    padding:0 1rem 0 0;
+    padding:.5rem 1rem .5rem 0;
     margin-left: auto;
+}
+
+.hidden-editor,
+.toggle-icon-pro {
+    position:relative;
+    z-index:99;
+}
+
+.toggle-icon-pro {
+    width:2rem;
+    margin-left:0;
+    line-height:2rem;
+    height:2rem;
+    display:inline-block;
+    text-align:center;
 }
