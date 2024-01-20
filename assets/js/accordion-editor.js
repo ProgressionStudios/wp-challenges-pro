@@ -1,5 +1,5 @@
 (function ($) {
-    $(document).delegate(".title-accordion-pro", "click", function () {
-        $(this).parent().toggleClass("hide");
+    $(document).delegate(".toggle-icon-pro", "click", function () {
+        $(this).parents(".title-accordion-pro").parents().toggleClass("hide");
     });
 })(jQuery);
