@@ -34,16 +34,16 @@ function editor_enqueue_assets_wp_challenges() {
 add_action( 'enqueue_block_assets', 'editor_enqueue_assets_wp_challenges' );
 
 function block_categories_wp_challenges_pro( $block_categories, $editor_context ) {
-		if ( ! empty( $editor_context->post ) ) {
-			array_push(
-				$block_categories,
-				array(
-					'slug'  => 'wp-challenges-pro',
-					'title' => __( 'WP Challenges Pro', 'wp-challenges-pro' ),
-					'icon'  => null,
-				)
-			);
-		}
-		return $block_categories;
+	if ( ! empty( $editor_context->post ) ) {
+		array_push(
+			$block_categories,
+			array(
+				'slug'  => 'wp-challenges-pro',
+				'title' => __( 'WP Challenges Pro', 'wp-challenges-pro' ),
+				'icon'  => null,
+			)
+		);
 	}
-	add_filter( 'block_categories_all', 'block_categories_wp_challenges_pro', 10, 2 );
+	return $block_categories;
+}
+add_filter( 'block_categories_all', 'block_categories_wp_challenges_pro', 10, 2 );
